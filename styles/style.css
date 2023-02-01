@@ -20,19 +20,19 @@ font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 h1,h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    color: var(--very-Dark-Cyan);
 }
 h2{
     font-size: 1.5rem;;
+}
+p{
+    line-height: 1.7;
 }
 body img{
     width: 100%;
@@ -104,8 +104,31 @@ header .btn{
 .intro img{
     width: 30px;
 }
-
-
+.subscription h2{
+    color: #fff;
+}
+#email{
+    width: 100%;
+    margin: 1rem 1rem 0 0;
+    margin-bottom: 1rem;
+}
+#email,.subscription .btn{
+    padding: 1rem;
+    border-radius: .325rem;
+    outline: none;
+    border: none;
+}
+.subscription .btn {
+    display: block;
+    margin-left: auto;
+    width: 50%;
+}
+.inputs{
+    color: blue !important;
+}
+.subscription > h2,p{
+    margin-bottom: .625rem ;
+}
 /* -------------------- */
 /* perks */
 /* .perks1{
@@ -114,8 +137,22 @@ header .btn{
     margin: 15rem 0;
     /* padding: 20rem 0; 
 } */
-
-
+.perk{
+    position: relative;
+    z-index: 0;
+    background: url(../images/bg-footer-top-mobile.svg)bottom/100% no-repeat;
+}
+.perk img{
+    width: 85%;
+    margin: auto
+}
+.perkExp{
+    margin: 5rem 0;
+}
+.perkExp p{
+    /* font-weight: 600; */
+    margin: 1rem 0;
+}
 
 .connections img{
     width: 30px;
@@ -138,6 +175,73 @@ header .btn{
 .intCont >div{
     margin: 2rem 0;
 }
+footer{
+}
+footer{
+    background:hsl(192, 100%, 9%) ;
+
+    text-align: left;
+    color: #fff;
+    /* background:; */
+    width: 100%;
+    padding: 3rem 0;;
+}
+.contact img{
+    width: 150px;
+}
+.contact span> img{
+    filter: unset;
+    width: 20px;
+}
+.connections img,.contact span> img{
+    width: 20px !important;
+    /* filter: unset; */
+}
+footer img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(76deg) brightness(104%) contrast(105%);
+}
+
+.contact  div:first-of-type span {
+        margin: 1rem 0;
+        width: 180px;
+        justify-content: space-between;
+    }
+    .connections{
+        margin-top: 3rem;
+    }
+    .subscription .btn {
+        width: 150px;
+    }
+    
+    footer p{
+        width: 70%;
+        font-size: 14px;
+        font-weight: 400;
+        word-spacing: 1.7;
+        line-height: 1.7;;
+    }
+    .contact p{
+        width: 80%;
+        margin-bottom: 2rem;;
+    }
+    .contact p{
+        /* font-size: .8rem; */
+        font-weight: 400;
+    }
+    .connections a:nth-child(2){
+        margin: 0 1rem;
+    }
+    .perkConfirm{
+        align-items: center;
+        flex-direction: column;
+        padding: 10rem 0;
+        padding-top: 1rem;
+    }
+    .perkConfirm h1{
+        margin: 1rem 0;
+    }
+
+
 @media (min-width: 800px){
     .container{
         width: 992px;
@@ -158,7 +262,9 @@ header .btn{
   
 
     .perk{
-        text-align: left;;
+        text-align: left;
+        background: url(../images/bg-footer-top-desktop.svg)bottom/100% no-repeat;
+        width: 100%;
     }
     .perks1{
         margin: unset;
@@ -168,6 +274,7 @@ header .btn{
     }
     .perk img{
         width: 40%;
+        margin: unset
     }
     .perkExp{
         width: 40%;
@@ -184,9 +291,10 @@ header .btn{
         order: 1;
     }
     .perkConfirm{
-        align-items: center;
         flex-direction: column;
-        margin: 2rem 0;
+    }
+    .perkConfirm{
+        padding-bottom: 20rem;
     }
     
     .perkExp h2{
@@ -197,12 +305,7 @@ header .btn{
         font-weight: 400;
     }
     /* footer subscription */
-    footer{
-        text-align: left;
-        color: #fff;
-        background:hsl(192, 100%, 9%) !important;
-        width: 100%;
-    }
+    
     .subscription{
         order: 1;
         width: 60%;
@@ -211,64 +314,17 @@ header .btn{
         width: 35%;
     }
     
-    .contact img{
-        width: 150px;
-    }
-    .connections img,.contact span> img{
-        width: 20px;
-        /* filter: unset; */
-    }
-    .contact span> img{
-        filter: unset;
-    }
-    footer img{
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(76deg) brightness(104%) contrast(105%);
+    
+
+    #email{
+        width: 60%;
     }
     .filter-white{
     margin: 0 0 1.5rem;
     }
-    .contact  div:first-of-type span {
-        margin: 1rem 0;
-        width: 180px;
-        justify-content: space-between;
-    }
-    .connections{
-        margin-top: 3rem;
-    }
+    
     .subscription .btn {
-        width: 150px !important;
-    }
-    #email,.subscription .btn{
-        padding: 0.625rem;
-        border-radius: .325rem;
-        outline: none;
-        border: none;
-    }
-    #email{
-        width: 60%;
-        margin: 1rem 1rem 0 0;
-        
-    }
-    .subscription > h2,p{
-        margin-bottom: .625rem ;
-    }
-    footer p{
-        width: 70%;
-        font-size: 14px;
-        font-weight: 400;
-        word-spacing: 1.7;
-        line-height: 1.7;;
-    }
-    .contact p{
-        width: 80%;
-        margin-bottom: 2rem;;
-    }
-    .contact p{
-        /* font-size: .8rem; */
-        font-weight: 400;
-    }
-    .connections a:nth-child(2){
-        margin: 0 1rem;
+        display: unset;
     }
 
     

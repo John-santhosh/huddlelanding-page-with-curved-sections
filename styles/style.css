@@ -61,6 +61,11 @@ body img{
     color: white;
     font-weight: 700;
     box-shadow: 1px 5px 10px hsl(321, 100%, 78%);
+    /* transition-property: ; */
+    transition:background .2s linear;
+}
+.btn:hover{
+    background:hsl(321, 100%, 78%);
 }
 
 /* -------------------------------- */
@@ -81,15 +86,16 @@ header img{
 
 header .btn{
     width: 100px;
-    background: transparent;
     border: 1px solid var(--pink);
-    color: var(--pink);
     padding: .3rem;
     font-weight: 400;
-    box-shadow:unset;
+    box-shadow:1px 2px 20px hsl(321, 100%, 78%); ;
+}
+header .btn:hover{
+    background: transparent;
+    color: var(--pink);
 
 }
-
 /* -------------------------------- */
 /* hero section */
 

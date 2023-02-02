@@ -130,6 +130,9 @@ header .btn{
     width: 50%;
     box-shadow: 1px 5px 10px  hsl(193, 100%, 4%);
 }
+.subscription {
+    margin-bottom: 5rem;
+}
 .inputs{
     color: blue !important;
 }
@@ -238,6 +241,7 @@ footer img{
         margin: 0 1rem;
     }
     .perkConfirm{
+        /* background:hsl(0, 100%, 63%); */
         align-items: center;
         flex-direction: column;
         padding: 13rem 0;
@@ -246,6 +250,7 @@ footer img{
     }
     .perkConfirm h1{
         margin: 1rem 0;
+        text-align: center;
     }
     .perk{
         text-align: left;
@@ -321,6 +326,7 @@ footer img{
     .subscription{
         order: 1;
         width: 60%;
+        /* margin-bottom: 30rem;; */
     }
     .contact{
         width: 35%;

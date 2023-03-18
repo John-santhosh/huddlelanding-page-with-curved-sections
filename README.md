@@ -1,7 +1,9 @@
 # DOM projects 
 
 ## menu list
-    <ol>
+
+    
+ <ol>
         <li> This is a webpage which show the menu of a hotel</li>
         <li> used various array method to dynamically add content for to the page</li>
         <li> buttons will automatically updated when a new category of item is a added</li>
@@ -9,7 +11,7 @@
     </ol>
 
 ## video project with preloader
-      <ol>
+<ol>
           <li> This is a video section page has a toggle button for pausing and resuming the video </li>
           <li> This contains a preloader which will be visible when the content of the page gets delayed to load </li>
       </ol>
